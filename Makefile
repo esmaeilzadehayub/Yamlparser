@@ -12,14 +12,14 @@ check:
 
 
 verify:
-	./yaml2fstab.py > /tmp/mnt
+	./yamlsfstab.py > /tmp/mnt
 	findmnt -x --verbose  -F /tmp/mnt 
 
 
 install:
-	echo "#yaml2fstab" >> /tmp/fstab
+	echo "#yamlsfstab" >> /tmp/fstab
 	./yaml2fstab.py >> /tmp/fstab
-	echo "#yaml2fstab" >> /tmp/fstab
+	echo "#yamlsfstab" >> /tmp/fstab
 
 
 parse:
@@ -27,5 +27,5 @@ parse:
 
 
 clean:
-	sed -i  '/#yaml2fstab/,/#yaml2fstab/{//!d}' /tmp/fstab
+	sed -i  '/#yamlsfstab/,/#yamlsfstab/{//!d}' /tmp/fstab
 	rm /tmp/mnt
