@@ -31,6 +31,4 @@ this script required python3 and pyyaml
 - run `make install` to add parsed data to /etc/fstab
 
 
-## Uninstall
-- run `make uninstall` to remove modifications made by this script from `/etc/fstab` 
 
