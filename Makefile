@@ -18,12 +18,12 @@ verify:
 
 install:
 	echo "#yamlsfstab" >> /tmp/fstab
-	./yamlsfstab.py.py >> /tmp/fstab
+	./yamlsfstab.py >> /tmp/fstab
 	echo "#yamlsfstab" >> /tmp/fstab
 
 
 parse:
-	./yaml2fstab.py
+	./yamlsfstab..py
 
 
 clean:
