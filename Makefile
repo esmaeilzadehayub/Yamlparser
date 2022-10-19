@@ -18,7 +18,7 @@ verify:
 
 install:
 	echo "#yamlsfstab" >> /tmp/fstab
-	./yaml2fstab.py >> /tmp/fstab
+	./yamlsfstab.py.py >> /tmp/fstab
 	echo "#yamlsfstab" >> /tmp/fstab
 
 
